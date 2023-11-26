@@ -1,0 +1,38 @@
+.container {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    margin-top: 5rem;
+}
+
+.container h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 60rem;
+    margin: auto;
+    margin-bottom: 5rem;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    padding: 1.1rem;
+    background-color: #F2F2F2;
+    box-shadow: 0.8rem 0.8rem 1.6rem rgba(0, 0, 0, 0.08)
+
+}
+
+.content {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    max-width: 90rem;
+    height: 55rem;
+    margin: auto;    
+    background-color: #F2F2F2;
+    box-shadow: 0.8rem 0.8rem 1.6rem rgba(0, 0, 0, 0.08)
+
+
+}
