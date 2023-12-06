@@ -1,0 +1,16 @@
+.preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .preview {
+    margin: 5px;
+    max-width: 150px;
+    overflow: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
