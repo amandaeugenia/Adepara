@@ -1,6 +1,6 @@
-import Content from "./components/Content";
-import Upload from "./components/Content/upload";
+
 import Header from "./components/Header";
+import Upload2 from "./components/Content/upload2";
 
 
 function App() {
@@ -8,10 +8,7 @@ function App() {
   return (
       <>
         <Header />
-        <Content 
-        h2="Prestação de Contas" 
-        h3 ="Anexe o(s) arquivo(s) abaixo"/>
-        <Upload />
+        <Upload2 />
       </>
     )
 }

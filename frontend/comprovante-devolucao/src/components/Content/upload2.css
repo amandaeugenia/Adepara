@@ -1,0 +1,128 @@
+.upload-box > p {
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+img {
+    width: 100%;
+}
+
+.icon {
+    width: 6rem;
+    height: 9rem;
+}
+
+.upload-box {    
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    width: 50%;
+    background: #f5f4f4;
+    border-radius: 0.5rem;
+    margin-top: 5rem;
+    padding: 1.5rem;
+    box-shadow: 0.7rem 0.7rem 1.2rem rgba(0, 0, 0, 0.05)
+}
+
+.upload-box form {
+    height: 20rem;
+    display: flex;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    border: 0.1rem dashed #000;
+}
+
+form :where(i, p) {
+    color: #0d204b;
+}
+
+form i {
+    font-size: 4rem;
+}
+
+form p {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+}
+
+section .row {
+    margin-bottom: 1rem;
+    background: #c4d4f39c;
+    list-style: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section .row i {
+    font-size: 2rem;
+    color: #0d204b;
+}
+
+section .details span {
+    font-size: 1.2rem;
+}
+
+.loading-area .row .content {
+    width: 100%;
+    margin-left: 1.5rem;
+}
+
+.loading-area .details {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.7rem;
+    justify-content: space-between;
+}
+
+ .loading-area .content .loading-bar {
+    height: 0.6rem;
+    width: 100%;
+    margin-bottom: 0.4rem;
+    background: #fff;
+    border-radius: 3rem;
+ }
+
+ .content .loading-bar .loading {
+    height: 100%;
+    width: 10%;
+    background: #0d204b;
+    border-radius: inherit;
+ }
+
+ .uploaded-area {
+    overflow: scroll;
+ }
+
+ .uploaded-area.onpgrogress{
+    max-height: 1.5rem;
+ }
+
+ .uploaded-area::-webkit-scrollbar{
+    width: 0px;
+ }
+ 
+ .uploaded-area .row .content {
+    display: flex;
+    align-items: center;
+ }
+
+ .uploaded-area .row .details {
+    display: flex;
+    margin-left: 1.5rem;
+    flex-direction: column;
+ }
+
+ .uploaded-area .row .details .size {
+    color: #746f6f;
+    font-size: 12px;
+ }
+
