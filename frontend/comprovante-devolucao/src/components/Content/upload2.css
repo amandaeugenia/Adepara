@@ -1,7 +1,6 @@
 .upload-box > p {
     text-align: center;
-    font-weight: 600;
-    
+    font-weight: 600;   
 }
 
 img {
@@ -43,7 +42,7 @@ form :where(i, p) {
 }
 
 form i {
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 form p {
