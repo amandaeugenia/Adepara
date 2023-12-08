@@ -17,7 +17,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     align-content: center;
-    width: 50%;
+    width:60%;
     background: #f5f4f4;
     border-radius: 0.5rem;
     margin-top: 5rem;
@@ -43,7 +43,7 @@ form :where(i, p) {
 }
 
 form i {
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 form p {
@@ -60,9 +60,12 @@ section .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
 
 section .row i {
+    display: flex;
+    align-items: center;
     font-size: 2rem;
     color: #0d204b;
 }
