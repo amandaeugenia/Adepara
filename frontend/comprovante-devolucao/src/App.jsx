@@ -1,6 +1,7 @@
 
 import Header from "./components/Header";
-import Upload2 from "./components/Content/upload2";
+import Upload from "./components/Content/index.jsx";
+
 
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
       <>
         <Header />
-        <Upload2 />
+        <Upload />
       </>
     )
 }
