@@ -30,6 +30,8 @@ function Upload() {
   const [uploadedFiles, setUploadedFiles] = useState([]);
   const [showProgress, setShowProgress] = useState(false);
   const fileInputeRef = useState(null);
+  const formRef = useRef(null);
+
 
   const handleFileInputClick = () => {
     fileInputeRef.current.click();
@@ -40,9 +42,8 @@ function Upload() {
     if (!file) return;
     const fileName =
       file.name.lenght > 12
-        ? `${(file.name = file.name.substring(0, 13))} ... .${
-            file.name.split(".")[1]
-          }`
+        ? `${(file.name = file.name.substring(0, 13))} ... .${file.name.split(".")[1]
+        }`
         : file.name;
     const formData = new FormData();
     formData.append("file", file);
@@ -75,12 +76,17 @@ function Upload() {
       .catch(console.error);
   };
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    changeStep(currentStep + 1);
+  };
+
   return (
     <div>
       <div className="title-bar">{currentComponent}</div>
       <div className="upload-box">
         <p>Selecione o arquivo</p>
-        <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
+        <form ref={formRef} onSubmit={handleFormSubmit}>
           <input
             className="file-input"
             type="file"
@@ -132,18 +138,14 @@ function Upload() {
         </section>
         <section className="navbar">
           <div className="actions">
-
-              <form onSubmit={(e) => changeStep(currentStep + 1, e)}>
-                <button type="button" onClick={() => changeStep(currentStep - 1)}>
-                  <GrFormPrevious />
-                  <span>Voltar</span>
-                </button>
-                <button type="submit">
-                  <span>Avançar</span>
-                  <GrFormNext />
-                </button>
-              </form>
-
+            <button type="button" onClick={() => { changeStep(currentStep - 1); }}>
+              <GrFormPrevious />
+              <span>Voltar</span>
+            </button>
+            <button type="submit" form={formRef} onClick={handleFormSubmit}>
+              <span>Avançar</span>
+              <GrFormNext />
+            </button>
           </div>
         </section>
       </div>
